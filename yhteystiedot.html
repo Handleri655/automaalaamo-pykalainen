@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yhteystiedot | Automaalaamo Pykäläinen Oy</title>
+  <meta name="description" content="Ota yhteyttä Automaalaamo Pykäläiseen. Peltomäenkatu 9 B, 04250 Kerava. Puh. 09 294 6680. Aukioloajat arkisin.">
+  <link rel="canonical" href="https://www.automaalaamopykalainen.fi/yhteystiedot.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Automaalaamo Pykäläinen Oy" width="196" height="80">
+      </a>
+      <nav class="nav" aria-label="Päävalikko">
+        <a href="index.html">Etusivu</a>
+        <a href="maalaukset.html">Maalaukset</a>
+        <a href="kolarikorjaus.html">Kolarikorjaus</a>
+        <a href="peltityot.html">Peltityöt</a>
+        <a href="vauriotarkastukset.html">Vauriotarkastukset</a>
+        <a class="active" href="yhteystiedot.html">Yhteystiedot</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-ghost" href="tel:+35892946680">09 294 6680</a>
+        <a class="btn" href="#lomake">Lähetä viesti</a>
+        <button class="menu-toggle" type="button" aria-label="Avaa valikko" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Yhteystiedot</p>
+        <h1>Ota yhteyttä ja varataan aika.</h1>
+        <p>Voit soittaa, lähettää sähköpostia tai jättää viestin lomakkeella. Ystävälliset ammattilaisemme vastaavat mielellään.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+        <div>
+          <article class="contact-card">
+            <h2>Automaalaamo Pykäläinen Oy</h2>
+            <div class="contact-list">
+              <p><span>Käyntiosoite</span><a href="https://maps.google.com/?q=Peltomäenkatu+9+B+Kerava" target="_blank" rel="noopener">Peltomäenkatu 9 B, 04250 Kerava</a></p>
+              <p><span>Puhelin</span><a href="tel:+35892946680">09 294 6680</a></p>
+              <p><span>Sähköposti</span><a href="mailto:automaalaamo@automaalaamopykalainen.fi">automaalaamo@automaalaamopykalainen.fi</a></p>
+              <p><span>Y-tunnus</span>2678490-7</p>
+            </div>
+          </article>
+          <article class="hours-card" style="margin-top:16px">
+            <h2>Aukioloajat</h2>
+            <div class="hours">
+              <div data-day="maanantai"><span>Maanantai</span><strong>08–16</strong></div>
+              <div data-day="tiistai"><span>Tiistai</span><strong>08–16</strong></div>
+              <div data-day="keskiviikko"><span>Keskiviikko</span><strong>08–17</strong></div>
+              <div data-day="torstai"><span>Torstai</span><strong>08–16</strong></div>
+              <div data-day="perjantai"><span>Perjantai</span><strong>08–16</strong></div>
+              <div data-day="lauantai"><span>Lauantai</span><strong>Suljettu</strong></div>
+              <div data-day="sunnuntai"><span>Sunnuntai</span><strong>Suljettu</strong></div>
+            </div>
+            <p class="form-note">Myös sopimuksen mukaan. Ajanvaraus suositeltava.</p>
+          </article>
+        </div>
+
+        <form class="form-card" id="contact-form">
+          <h2 id="lomake">Lähetä viesti</h2>
+          <div class="form-row">
+            <label>Nimi
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>Puhelin
+              <input type="tel" name="phone" autocomplete="tel" required>
+            </label>
+          </div>
+          <label>Sähköposti
+            <input type="email" name="email" autocomplete="email">
+          </label>
+          <label>Palvelu
+            <select name="service">
+              <option value="">Valitse</option>
+              <option>Automaalaus</option>
+              <option>Erikoismaalaus</option>
+              <option>Kolarikorjaus</option>
+              <option>Peltivaurio</option>
+              <option>Vauriotarkastus</option>
+              <option>Muu</option>
+            </select>
+          </label>
+          <label>Viesti
+            <textarea name="message" required placeholder="Kerro lyhyesti autosta ja vahingosta."></textarea>
+          </label>
+          <button class="btn" type="submit">Avaa sähköposti</button>
+          <p class="form-note">Lomake avaa sähköpostisi valmiilla viestillä. Voit myös soittaa suoraan. Käsittelemme yhteystiedot vain yhteydenottoon.</p>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="map-card">
+          <iframe title="Kartta: Automaalaamo Pykäläinen Kerava" src="https://maps.google.com/maps?q=Peltom%C3%A4enkatu%209%20Kerava&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p>Automaalaukset, kolarikorjaukset ja peltivauriot. Vakuutusyhtiöiden hyväksymä.</p>
+      </div>
+      <nav>
+        <a href="maalaukset.html">Maalaukset</a>
+        <a href="kolarikorjaus.html">Kolarikorjaus</a>
+        <a href="peltityot.html">Peltityöt</a>
+        <a href="vauriotarkastukset.html">Vauriotarkastukset</a>
+      </nav>
+      <p>Asiakkaan asialla vuodesta 2015</p>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© <span id="year"></span> Automaalaamo Pykäläinen Oy</span>
+      <span>Y-tunnus 2678490-7</span>
+    </div>
+  </footer>
+  <a class="btn mobile-call" href="tel:+35892946680">Soita</a>
+  <script type="module" src="js/motion.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
