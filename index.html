@@ -3,48 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Automaalaamo Pykäläinen Oy | Automaalaukset ja kolarikorjaus Kerava</title>
+  <title>Automaalaus ja kolarikorjaus Kerava | Pykäläinen</title>
   <meta name="description" content="Automaalaukset, kolarikorjaukset ja peltivauriot Keravalla. Vakuutusyhtiöiden hyväksymä. Suoritamme myös erikoismaalaukset. Asiakkaan asialla vuodesta 2015.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.automaalaamopykalainen.fi/">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-  <meta property="og:title" content="Automaalaamo Pykäläinen Oy">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+  <meta property="og:title" content="Automaalaus ja kolarikorjaus Kerava | Pykäläinen">
   <meta property="og:description" content="Automaalaukset, kolarikorjaukset ja peltivauriot Keravalla. Vakuutusyhtiöiden hyväksymä.">
-  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:image" content="https://www.automaalaamopykalainen.fi/images/hero.webp">
+  <meta property="og:url" content="https://www.automaalaamopykalainen.fi/">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:site_name" content="Automaalaamo Pykäläinen Oy">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Automaalaus ja kolarikorjaus Kerava | Pykäläinen">
+  <meta name="twitter:description" content="Automaalaukset, kolarikorjaukset ja peltivauriot Keravalla. Vakuutusyhtiöiden hyväksymä.">
+  <meta name="twitter:image" content="https://www.automaalaamopykalainen.fi/images/hero.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0c0c0f;
+      --bg-2: #121216;
+      --surface: #18181d;
+      --text: #f4f0e6;
+      --muted: #a39d91;
+      --accent: #e24a1a;
+      --accent-2: #ff7a3d;
+      --gold: #d7b06a;
+    }
+    .btn,
+    .service-card,
+    .review-card {
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+    @media (max-width: 980px) {
+      .hero { min-height: 88vh; }
+    }
+    @media (max-width: 640px) {
+      .hero { min-height: 92vh; }
+    }
+  </style>
   <link rel="stylesheet" href="css/styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AutoBodyShop",
-    "name": "Automaalaamo Pykäläinen Oy",
-    "url": "https://www.automaalaamopykalainen.fi/",
-    "telephone": "+35892946680",
-    "email": "automaalaamo@automaalaamopykalainen.fi",
-    "vatID": "FI26784907",
-    "foundingDate": "2015",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Peltomäenkatu 9 B",
-      "postalCode": "04250",
-      "addressLocality": "Kerava",
-      "addressCountry": "FI"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 60.3917878,
-      "longitude": 25.1053915
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.6",
-      "reviewCount": "22"
-    },
-    "openingHoursSpecification": [
-      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Thursday","Friday"],"opens":"08:00","closes":"16:00"},
-      {"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"08:00","closes":"17:00"}
+    "@graph": [
+      {
+        "@type": "AutoBodyShop",
+        "@id": "https://www.automaalaamopykalainen.fi/#business",
+        "name": "Automaalaamo Pykäläinen Oy",
+        "url": "https://www.automaalaamopykalainen.fi/",
+        "image": "https://www.automaalaamopykalainen.fi/images/hero.webp",
+        "telephone": "+35892946680",
+        "email": "automaalaamo@automaalaamopykalainen.fi",
+        "vatID": "FI26784907",
+        "foundingDate": "2015",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Peltomäenkatu 9 B",
+          "postalCode": "04250",
+          "addressLocality": "Kerava",
+          "addressCountry": "FI"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 60.3917878,
+          "longitude": 25.1053915
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "22"
+        },
+        "openingHoursSpecification": [
+          {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Thursday","Friday"],"opens":"08:00","closes":"16:00"},
+          {"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"08:00","closes":"17:00"}
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.automaalaamopykalainen.fi/#webpage",
+        "url": "https://www.automaalaamopykalainen.fi/",
+        "name": "Automaalaus ja kolarikorjaus Kerava | Pykäläinen",
+        "description": "Automaalaukset, kolarikorjaukset ja peltivauriot Keravalla.",
+        "isPartOf": { "@type": "WebSite", "name": "Automaalaamo Pykäläinen Oy", "url": "https://www.automaalaamopykalainen.fi/" },
+        "about": { "@id": "https://www.automaalaamopykalainen.fi/#business" }
+      }
     ]
   }
   </script>
@@ -75,17 +123,20 @@
   <main id="sisalto">
     <section class="hero">
       <div class="hero-media">
-        <img src="images/hero.jpg" alt="Auto maalauskioskissa">
+        <picture>
+          <source srcset="images/hero.webp" type="image/webp">
+          <img src="images/hero.jpg" alt="Auto maalauskioskissa" width="1350" height="900">
+        </picture>
       </div>
       <div class="wrap hero-content">
         <div>
           <p class="eyebrow">Kerava · Vuodesta 2015</p>
           <h1>Automaalaukset, kolarikorjaukset, peltivauriot.</h1>
         </div>
-        <p class="lead">Vakuutusyhtiöiden hyväksymä. Suoritamme myös erikoismaalaukset. Asiakkaan asialla jo vuodesta 2015.</p>
+        <p class="lead">Vakuutusyhtiöiden hyväksymä. Pyydä arvio, soita tai varaa tarkastus. Yli kymmenen vuotta kokemusta — jokainen asiakas saa takuun työn jäljestä ja tukea vakuutusasioissa.</p>
         <div class="hero-actions">
           <a class="btn" href="tel:+35892946680">Soita 09 294 6680</a>
-          <a class="btn btn-ghost" href="yhteystiedot.html">Varaa tarkastus</a>
+          <a class="btn btn-ghost" href="#yhteydenotto">Ota yhteyttä</a>
         </div>
         <div class="hero-meta">
           <div><strong>4,6 / 5</strong><span>22 Google-arvostelua</span></div>
@@ -97,10 +148,10 @@
 
     <section class="trust">
       <div class="wrap trust-grid">
-        <div class="trust-item"><strong>Vakuutusyhtiöiden hyväksymä</strong><span>CABAS-laskelma ja suorakorjaus</span></div>
-        <div class="trust-item"><strong>Kaikki saman katon alla</strong><span>Tarkastus, pelti, hitsaus ja maalaus</span></div>
-        <div class="trust-item"><strong>Kaikki merkit</strong><span>Henkilö- ja pakettiautot, myös MP</span></div>
-        <div class="trust-item"><strong>Nopea aloitusaika</strong><span>Työt käyntiin heti auton saavuttua</span></div>
+        <div class="trust-item"><strong>Vakuutusyhtiöiden hyväksymä</strong><span>CABAS-laskelma, suorakorjaus ja tuki</span></div>
+        <div class="trust-item"><strong>Yli 10 vuotta</strong><span>Keravalainen asiakas ja takuu työn jäljestä</span></div>
+        <div class="trust-item"><strong>22 Google-arvostelua</strong><span>4,6 / 5 — lue arvostelu tai jätä oma</span></div>
+        <div class="trust-item"><strong>Y-tunnus 2678490-7</strong><span>Peltomäenkatu 9 B, 04250 Kerava</span></div>
       </div>
     </section>
 
@@ -146,7 +197,7 @@
       </div>
     </section>
 
-    <section class="section" style="padding-top:0">
+    <section class="section section-tight">
       <div class="wrap about">
         <div class="about-media">
           <img src="images/workshop.jpg" alt="Maalari ruiskupistoolin kanssa maalauskioskissa">
@@ -170,7 +221,7 @@
       </div>
     </section>
 
-    <section class="section" style="background:var(--bg-2)">
+    <section class="section section-alt">
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">Näin etenemme</p>
@@ -267,7 +318,42 @@
       </div>
     </section>
 
-    <section class="section" style="padding-top:0">
+    <section class="section section-tight" id="yhteydenotto">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="eyebrow">Yhteydenotto</p>
+          <h2>Pyydä arvio tai varaa tarkastus.</h2>
+          <p class="lead">Soita, lähetä sähköpostia tai täytä lomake. Hoidamme vakuutusyhtiön paperit ja pidämme sinut ajan tasalla.</p>
+          <ul class="checklist">
+            <li>Vastaus arkisin yleensä saman päivän aikana</li>
+            <li>Vauriotarkastus heti auton saavuttua</li>
+            <li>Y-tunnus 2678490-7 · Kerava</li>
+          </ul>
+        </div>
+        <form class="form-card" id="contact-form" action="mailto:automaalaamo@automaalaamopykalainen.fi" method="post" enctype="text/plain">
+          <h3>Lähetä viesti</h3>
+          <div class="form-row">
+            <label>Nimi
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>Puhelin
+              <input type="tel" name="phone" autocomplete="tel" required>
+            </label>
+          </div>
+          <label>Sähköposti
+            <input type="email" name="email" autocomplete="email">
+          </label>
+          <label>Viesti
+            <textarea name="message" required placeholder="Kerro lyhyesti autosta ja vahingosta."></textarea>
+          </label>
+          <button class="btn" type="submit">Ota yhteyttä lomakkeella</button>
+          <p class="form-note">Käsittelemme yhteystiedot vain yhteydenottoon. Voit myös soittaa suoraan.</p>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-tight">
       <div class="wrap">
         <div class="cta-band">
           <img src="images/cta.jpg" alt="Ennen ja jälkeen automaalauksen">
@@ -278,7 +364,7 @@
             </div>
             <div class="hero-actions">
               <a class="btn" href="tel:+35892946680">09 294 6680</a>
-              <a class="btn btn-ghost" href="yhteystiedot.html">Lähetä viesti</a>
+              <a class="btn btn-ghost" href="mailto:automaalaamo@automaalaamopykalainen.fi">Lähetä viesti</a>
             </div>
           </div>
         </div>
